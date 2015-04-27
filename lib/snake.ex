@@ -17,8 +17,18 @@ defmodule Snake do
     Supervisor.start_link(children, opts)
   end
 
-  def py do
+  def a do
     {:ok, pp} = :python.start()
-    :python.call(pp, :__builtin__, :print, ["hey there"])
+    :python.call(pp, :sys, String.to_atom("version.__str__"), [])
   end
+
+  def b do
+    name = IO.gets "What's your name?\n"
+    name = String.strip(name)
+    {:ok, pp} = :python.start([{:python_path, '/Users/arthur/Code/elixir/elixir_with_erlport/lib/'},{:python, 'python'}])
+    :python.call(pp, :play, :func, [name])
+  end
+
+
 end
+
