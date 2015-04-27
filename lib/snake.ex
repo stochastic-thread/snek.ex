@@ -29,6 +29,9 @@ defmodule Snake do
     :python.call(pp, :play, :func, [name])
   end
 
-
+  def c do
+    {:ok, pp} = :python.start([{:python_path, '/Users/arthur/Code/elixir/elixir_with_erlport/lib/'},{:python, 'python'}])
+    :python.call(pp, :atoms, :pids, [])
+    :python.call(pp, :atoms, :pids_more, [1000])
+  end
 end
-
