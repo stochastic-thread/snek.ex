@@ -1,4 +1,4 @@
-Snake
+elixir-snake
 =====
 
 Writing equivalents of the Erlang/Python examples on http://erlport.org/docs/python.html so that they work in a Mix application.
