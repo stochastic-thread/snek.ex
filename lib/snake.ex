@@ -25,12 +25,12 @@ defmodule Snake do
   def b do
     name = IO.gets "What's your name?\n"
     name = String.strip(name)
-    {:ok, pp} = :python.start([{:python_path, '/Users/arthur/Code/elixir/elixir_with_erlport/lib/'},{:python, 'python'}])
+    {:ok, pp} = :python.start([{:python_path, '/Users/arthur/Code/elixir/elixir-snake/lib/python_scripts'},{:python, 'python'}])
     :python.call(pp, :play, :func, [name])
   end
 
   def c do
-    {:ok, pp} = :python.start([{:python_path, '/Users/arthur/Code/elixir/elixir_with_erlport/lib/'},{:python, 'python'}])
+    {:ok, pp} = :python.start([{:python_path, '/Users/arthur/Code/elixir/elixir-snake/lib/python_scripts'},{:python, 'python'}])
     :python.call(pp, :atoms, :pids, [])
     :python.call(pp, :atoms, :pids_more, [1000])
   end
