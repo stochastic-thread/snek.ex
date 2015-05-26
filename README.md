@@ -15,7 +15,7 @@ mix deps.get
 mix compile
 iex -S mix run
 ```
-You have to change where :python_path points to (it should point to lib/python_scripts as an absolute path on your system) in snake.ex, and other than having Python 2.7.9 installed (I used Anaconda) you should be good.
+Other than having Python 2.7.9 installed (I used Anaconda) you should be good. Please feel free to submit pull requests, or even add cooler examples! 
 
 **Example 1**: *Simple call to Python*
 
