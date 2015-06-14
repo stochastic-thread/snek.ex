@@ -34,4 +34,9 @@ defmodule Snake do
     :python.call(pp, :atoms, :pids, [])
     :python.call(pp, :atoms, :pids_more, [1000])
   end
+
+  def d do
+    {:ok, pp} = :python.start([{:python_path, to_char_list(Path.expand("lib/python_scripts"))},{:python, 'python'}])
+    :python.call(pp, :geo, :run, [])
+  end
 end
