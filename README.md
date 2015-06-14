@@ -59,3 +59,19 @@ Here they are!
  #PID<0.141.0>, #PID<0.142.0>, #PID<0.143.0>, #PID<0.144.0>, #PID<0.145.0>,
  #PID<0.146.0>, #PID<0.147.0>, #PID<0.148.0>, #PID<0.149.0>, #PID<0.150.0>, ...]
 ```
+
+**Example 4**: *(requires geocoder 1.4.0 on the py side)*
+
+
+**```Snake.d```**
+
+```
+iex(1)> Snake.d
+<[OK] Google - Geocode [New York, NY, USA]>
+NY
+{'status': 'OK', 'city': 'NY', 'confidence': 1, 'ok': True, 'encoding': 'utf-8', 'geometry': {'type': 'Point', 'coordinates': [-74.0059413, 40.7127837]}, 'country': 'US', 'provider': 'google', 'location': 'New York City', 'state': 'NY', 'bbox': {'northeast': [40.91525559999999, -73.70027209999999], 'southwest': [40.4913699, -74.25908989999999]}, 'address': 'New York, NY, USA', 'lat': 40.7127837, 'lng': -74.0059413, 'quality': u'locality', 'method': 'geocode', 'accuracy': 'APPROXIMATE'}
+<[OK] Google - Geocode [New York, NY, USA]>
+NY
+{'status': 'OK', 'city': 'NY', 'confidence': 1, 'ok': True, 'encoding': 'utf-8', 'geometry': {'type': 'Point', 'coordinates': [-74.0059413, 40.7127837]}, 'country': 'US', 'provider': 'google', 'location': 'New York City', 'state': 'NY', 'bbox': {'northeast': [40.91525559999999, -73.70027209999999], 'southwest': [40.4913699, -74.25908989999999]}, 'address': 'New York, NY, USA', 'lat': 40.7127837, 'lng': -74.0059413, 'quality': u'locality', 'method': 'geocode', 'accuracy': 'APPROXIMATE'}
+:undefined
+```
