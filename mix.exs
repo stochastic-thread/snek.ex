@@ -1,33 +1,24 @@
-defmodule Snake.Mixfile do
+defmodule SNEK.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :snake,
-     version: "0.0.1",
-     elixir: "~> 1.1-dev",
+    [app: :snek,
+     version: "0.0.2",
+     elixir: "~> 1.7.0-dev",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     deps: deps]
+     deps: deps()]
   end
 
-  # Configuration for the OTP application
-  #
-  # Type `mix help compile.app` for more information
   def application do
     [applications: [:logger],
-     mod: {Snake, []}]
+     mod: {SNEK, []}]
   end
 
-  # Dependencies can be Hex packages:
-  #
-  #   {:mydep, "~> 0.3.0"}
-  #
-  # Or git/path repositories:
-  #
-  #   {:mydep, git: "https://github.com/elixir-lang/mydep.git", tag: "0.1.0"}
-  #
-  # Type `mix help deps` for more examples and options
-  defp deps do
-    [{:erlport, git: "https://github.com/hdima/erlport.git"}]
+  defp deps() do
+    [
+      {:erlport, git: "https://github.com/hdima/erlport.git"},
+      {:number, "~> 0.5.7"}
+    ]
   end
 end
