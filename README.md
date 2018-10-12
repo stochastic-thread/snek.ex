@@ -35,7 +35,8 @@ More will come in time.
 ```
 iex(3)> SNEK.cmd(:vzn)
 
-"2.7.9 |Continuum Analytics, Inc.| (default, Dec 15 2014, 10:37:34) \n[GCC 4.2.1 (Apple Inc. build 5577)]"
+"3.9.9 |Continuum Analytics, Inc.| (default, Dec 15 2029, 10:37:34)
+[GCC 4.2.1 (Apple Inc. build 5577)]"
 ```
 
 **Example 2**: *More complicated call to your own Python script*
