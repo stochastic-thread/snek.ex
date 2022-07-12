@@ -74,4 +74,4 @@ Tuple right element is the process that runs the port connector to the python pr
 ```
 
 As you can see the above response is a tuple, left is the py proc (under the hood really its a port that enables
-messaging with another process such as the python vm. On the right, your list of processes is available
+messaging with another process via STDIN and STDOUT, in this case from the processes running in the BEAM VM <---> a running Python process. On the right, your list of processes is available
