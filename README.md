@@ -1,8 +1,5 @@
 # snek
 
-## To Do
-I should really do this now, it'll only take a second, but I need to figure out why Zcash is the pile of trash it is more urgently. I will return. I always do:
-
 [ ] Save the python erlport process in an Agent, and retrieve it across all of the following functions.
 However, problem could pose itself in that you would have shared state persist, which could lead to issues. Ideally, it would be best if a developer could just have a big string of the python program (or not, just read in from disk is better) and then pass it into a function that then spins up a python process that implements a simple "i run any code i get" logic, but that sounds a little dangerous.
 
